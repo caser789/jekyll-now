@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Xue Jiao
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+City: Beijing
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jiao.xuejiao@gmail.com](mailto:jiao.xuejiao@gmail.com)
