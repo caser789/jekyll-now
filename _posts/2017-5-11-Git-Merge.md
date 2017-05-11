@@ -1,0 +1,24 @@
+---
+layout: post
+title: Git Merge
+---
+view diffs when having merge conflict
+
+`git log --merge -p file1.txt`
+
+# Strategies
+1. Resolve strategy
+2. Recursive strategy
+    
+    * -X Ours
+    * -X Theirs
+    * -X ignore-space-change
+    * -X ignore-all-space
+    * -X ignore-space-at-eol
+
+```
+git cherry-pick -Xtheirs d9e3b4
+```
+
+3. Octopus strategy
+4. Ours strategy
