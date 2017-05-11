@@ -6,14 +6,10 @@ title: IAM DynamoDB to Kinesis
 {
   "Statement": [
     {
-      "Action": [
-        "logs:*"
-      ],
+      "Action": ["logs:*"],
       "Effect": "Allow",
-      "Resource": [
-        "*"
-      ],
-      "Sid": "Stmt1446202596000"
+      "Resource": ["*"],
+      "Sid": "firehose"
     },
     {
       "Action": [
@@ -26,7 +22,7 @@ title: IAM DynamoDB to Kinesis
       "Resource": [
         "arn:aws:kinesis:us-east-1:115200798215:stream/ohippo-muid"
       ],
-      "Sid": "Stmt1446202630000"
+      "Sid": "firehose2"
     },
     {
       "Action": [
@@ -40,9 +36,23 @@ title: IAM DynamoDB to Kinesis
       ],
       "Effect": "Allow",
       "Resource": [
-        "arn:aws:kinesis:us-east-1:115200798215:table/ohippo-muid"
+        "*"
       ],
-      "Sid": "Stmt1447079825000"
+      "Sid": "dynamo"
+    },
+     {
+      "Action": [
+        "kinesis:DescribeStream",
+        "kinesis:ListStreams",
+        "kinesis:GetShardIterator",
+        "kinesis:GetRecords",
+        "kinesis:ListTagsForStream"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "*"
+      ],
+      "Sid": "kinesis"
     },
     {
       "Effect": "Allow",
