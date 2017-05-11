@@ -16,9 +16,15 @@ view diffs when having merge conflict
     * -X ignore-all-space
     * -X ignore-space-at-eol
 
-```
-git cherry-pick -Xtheirs d9e3b4
-```
+    ```
+    git cherry-pick -Xtheirs d9e3b4
+    ```
 
 3. Octopus strategy
 4. Ours strategy
+
+# Set merge conflict to show ancestor
+
+```
+git config --global merge.conflictstyle diff3
+```
