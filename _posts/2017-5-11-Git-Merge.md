@@ -2,7 +2,8 @@
 layout: post
 title: Git Merge
 ---
-view diffs when having merge conflict
+
+# view diffs when having merge conflict
 
 `git log --merge -p file1.txt`
 
