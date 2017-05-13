@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Git Search
+date:   2017-05-12 10:54:01 +0800
+categories: git search config
 ---
 
 # search

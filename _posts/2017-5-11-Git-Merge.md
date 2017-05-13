@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Git Merge
+date:   2017-05-11 11:54:01 +0800
+categories: git merge
 ---
 
 # view diffs when having merge conflict

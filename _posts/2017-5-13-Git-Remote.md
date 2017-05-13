@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Git Remote
+date:   2017-05-13 09:54:01 +0800
+categories: git remote clone view upstream push fetch pull
 ---
 # remote
 ```

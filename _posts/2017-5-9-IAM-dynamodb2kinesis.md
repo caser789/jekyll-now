@@ -1,7 +1,11 @@
 ---
 layout: post
 title: IAM DynamoDB to Kinesis
+date:   2017-05-13 12:54:01 +0800
+categories: dynamodb aws stream kinesis firehose
 ---
+## Import dynamodb stream to kinesis firehose
+
 ```json
 {
     "Statement": [

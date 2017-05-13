@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Git Clean
+date:   2017-05-12 09:54:01 +0800
+categories: git clean gc notes filter-branch rev-list bisect rerere
 ---
 # clean
 

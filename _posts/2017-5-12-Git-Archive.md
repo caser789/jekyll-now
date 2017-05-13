@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Git Archive
+date:   2017-05-12 08:54:01 +0800
+categories: git archive bundle patch am apply
 ---
 
 # Archive
