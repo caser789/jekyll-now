@@ -1,0 +1,44 @@
+---
+layout: post
+title: Git Subtree
+---
+# subtree
+```
+git subtree add -p <prefix> <commit>
+git subtree add -p <prefix> <repository> <ref>
+git subtree pull -p <prefix> <repository> <ref>
+git subtree push -p <prefix> <repository> <ref>
+git subtree merge -p <prefix> <commit>
+git subtree split -p <prefix> [OPTIONS] [<commit>]
+```
+## add
+```
+git subtree add --prefix subproject ~/subtree/remotes/subproj.git master
+
+git remote add sub_origin ~/subtrees/remotes/subproj.git
+git subtree add --prefix subproject --squash sub_origin master
+```
+
+## update
+
+```
+git subtree pull --prefix subproject sub_origin master --squash
+```
+
+## split
+```
+git subtree split --prefix=subproject --branch=split_branch
+```
+
+## push
+```
+git subtree push --prefix=subproject sub_origin new_branch
+```
+
+## Create a new project
+```
+mkdir newproj
+cd newproj
+git init
+git pull ~/subtrees/local/myproject split_branch
+```
